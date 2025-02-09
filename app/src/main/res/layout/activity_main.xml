@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".presentation.ui.main.MainActivity"
+    android:background="@color/grey200">
+
+    <include
+        layout="@layout/section_header"
+        android:id="@+id/userDetail" />
+
+    <FrameLayout
+        android:id="@+id/fragmentContainer"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="120dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/userDetail" />
+
+    <androidx.coordinatorlayout.widget.CoordinatorLayout
+        android:id="@+id/coordinatorLayout"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/space_120dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <com.google.android.material.bottomappbar.BottomAppBar
+            android:id="@+id/bottomAppBar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:backgroundTint="@color/white"
+            app:fabAlignmentMode="center"
+            app:fabAnchorMode="cradle"
+            app:fabCradleVerticalOffset="@dimen/space_0dp"
+            app:removeEmbeddedFabElevation="true">
+
+            <com.google.android.material.bottomnavigation.BottomNavigationView
+                android:id="@+id/bottomNavigationView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/space_10dp"
+                android:background="@android:color/transparent"
+                app:elevation="@dimen/space_0dp"
+                app:itemActiveIndicatorStyle="@android:color/transparent"
+                app:itemIconSize="@dimen/space_32dp"
+                app:itemIconTint="@color/bottom_nav_selector"
+                app:itemPaddingBottom="@dimen/space_16dp"
+                app:itemRippleColor="@color/white"
+                app:itemTextColor="@color/bottom_nav_selector"
+                app:labelVisibilityMode="labeled"
+                app:menu="@menu/bottom_navigation_menu">
+
+            </com.google.android.material.bottomnavigation.BottomNavigationView>
+
+        </com.google.android.material.bottomappbar.BottomAppBar>
+
+        <ImageButton
+            android:layout_width="@dimen/space_60dp"
+            android:layout_height="@dimen/space_60dp"
+            android:background="@drawable/bg_gradient_circle"
+            android:padding="@dimen/space_12dp"
+            android:src="@drawable/ic_add"
+            app:layout_anchor="@id/bottomAppBar"
+            app:layout_anchorGravity="center_horizontal"
+            app:tint="@color/white" />
+
+    </androidx.coordinatorlayout.widget.CoordinatorLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

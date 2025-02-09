@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="48dp">
+
+        <EditText
+            android:id="@+id/etInput"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/bg_rounded_input"
+            tools:hint="Email"
+            android:inputType="textEmailAddress"
+            android:paddingStart="48dp"
+            android:paddingEnd="48dp"
+            android:textColorHint="@color/grey700"
+            android:textSize="16sp"
+            tools:ignore="HardcodedText" />
+
+        <ImageView
+            android:id="@+id/iconStart"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_gravity="center_vertical|start"
+            android:layout_marginStart="12dp"
+            android:visibility="gone"
+            tools:visibility="visible"
+            tools:src="@drawable/ic_mail"/>
+
+        <ImageView
+            android:id="@+id/iconEnd"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_gravity="center_vertical|end"
+            android:layout_marginEnd="12dp"
+            android:visibility="gone"
+            tools:visibility="visible"
+            tools:src="@drawable/ic_eye_close"/>
+    </FrameLayout>
+
+    <TextView
+        android:id="@+id/errorTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:textColor="@color/red400"
+        android:textSize="12sp"
+        android:visibility="gone"
+        tools:text="This form is required"
+        tools:visibility="visible" />
+
+</LinearLayout>

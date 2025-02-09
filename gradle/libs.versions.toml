@@ -1,0 +1,94 @@
+[versions]
+
+# Core & Kotlin
+agp = "8.7.3"
+kotlin = "1.9.24"
+core-ktx = "1.12.0"
+appcompat = "1.7.0"
+material = "1.12.0"
+activity-ktx = "1.8.2"
+fragment-ktx = "1.6.2"
+
+# Networking & API
+retrofit = "2.11.0"
+okhttp = "4.12.0"
+
+# Lifecycle & ViewModel
+lifecycle = "2.7.0"
+
+# Coroutines
+coroutines = "1.7.3"
+
+# Dependency Injection
+hilt = "2.50"
+
+# DataStore
+datastore = "1.0.0"
+
+# Testing
+junit = "4.13.2"
+junitVersion = "1.2.1"
+espressoCore = "3.6.1"
+
+# Image Library
+glide = "4.15.1"
+circleImageView = "3.1.0"
+
+# Chart
+mpandroidchart = "v3.1.0"
+
+# Chucker
+chucker = "4.1.0"
+
+
+[libraries]
+
+# Android Core
+core-ktx = { group = "androidx.core", name = "core-ktx", version.ref = "core-ktx" }
+appcompat = { group = "androidx.appcompat", name = "appcompat", version.ref = "appcompat" }
+material = { group = "com.google.android.material", name = "material", version.ref = "material" }
+activity-ktx = { group = "androidx.activity", name = "activity-ktx", version.ref = "activity-ktx" }
+fragment-ktx = { group = "androidx.fragment", name = "fragment-ktx", version.ref = "fragment-ktx" }
+
+# Networking & API
+retrofit = { group = "com.squareup.retrofit2", name = "retrofit", version.ref = "retrofit" }
+retrofit-converter = { group = "com.squareup.retrofit2", name = "converter-gson", version.ref = "retrofit" }
+okhttp = { group = "com.squareup.okhttp3", name = "logging-interceptor", version.ref = "okhttp" }
+
+# Lifecycle & ViewModel
+lifecycle-viewmodel = { group = "androidx.lifecycle", name = "lifecycle-viewmodel-ktx", version.ref = "lifecycle" }
+lifecycle-runtime = { group = "androidx.lifecycle", name = "lifecycle-runtime-ktx", version.ref = "lifecycle" }
+lifecycle-livedata = { group = "androidx.lifecycle", name = "lifecycle-livedata-ktx", version.ref = "lifecycle" }
+
+# Coroutines
+coroutines-core = { group = "org.jetbrains.kotlinx", name = "kotlinx-coroutines-core", version.ref = "coroutines" }
+coroutines-android = { group = "org.jetbrains.kotlinx", name = "kotlinx-coroutines-android", version.ref = "coroutines" }
+
+# Hilt
+hilt = { group = "com.google.dagger", name = "hilt-android", version.ref = "hilt" }
+hilt-compiler = { group = "com.google.dagger", name = "hilt-android-compiler", version.ref = "hilt" }
+
+# DataStore
+datastore = { group = "androidx.datastore", name = "datastore-preferences", version.ref = "datastore" }
+
+# Testing
+junit = { group = "junit", name = "junit", version.ref = "junit" }
+androidx-junit = { group = "androidx.test.ext", name = "junit", version.ref = "junitVersion" }
+androidx-espresso-core = { group = "androidx.test.espresso", name = "espresso-core", version.ref = "espressoCore" }
+
+# Image Library
+glide = { group = "com.github.bumptech.glide", name = "glide", version.ref = "glide" }
+circleImageView = { group = "de.hdodenhof", name = "circleimageview", version.ref = "circleImageView" }
+
+# Chart
+mpandroidchart = { group = "com.github.PhilJay", name = "MPAndroidChart", version.ref = "mpandroidchart" }
+
+# Chucker
+chucker = { group = "com.github.chuckerteam.chucker", name = "library", version.ref = "chucker" }
+chucker-noop = { group = "com.github.chuckerteam.chucker", name = "library-no-op", version.ref = "chucker" }
+
+
+[plugins]
+android-application = { id = "com.android.application", version.ref = "agp" }
+kotlin-android = { id = "org.jetbrains.kotlin.android", version.ref = "kotlin" }
+hilt = { id = "com.google.dagger.hilt.android", version.ref = "hilt" }

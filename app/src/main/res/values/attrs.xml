@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="GoodsEditText">
+        <attr name="customHint" format="string"/>
+        <attr name="errorMessage" format="string"/>
+        <attr name="isPassword" format="boolean"/>
+        <attr name="startIcon" format="reference"/>
+        <attr name="inputType">
+            <enum name="text" value="1"/>
+            <enum name="textEmailAddress" value="33"/>
+            <enum name="textPassword" value="129"/>
+            <enum name="number" value="2"/>
+        </attr>
+    </declare-styleable>
+
+    <declare-styleable name="GoodsButton">
+        <attr name="buttonText" format="string"/>
+    </declare-styleable>
+</resources>

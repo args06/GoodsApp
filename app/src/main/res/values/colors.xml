@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+
+    <!--    Primary Color-->
+    <color name="primary800">#2B8FEB</color>
+    <color name="primary700">#4A9BE5</color>
+    <color name="primary600">#67ACEB</color>
+    <color name="primary500">#88C1F4</color>
+    <color name="primary400">#AFD9FF</color>
+    <color name="primary300">#ECF3FA</color>
+
+    <color name="gradientPrimaryLight">#7DC1FF</color>
+    <color name="gradientPrimaryDeep">#278CEA</color>
+
+    <!--    Red Color-->
+    <color name="red800">#CB030F</color>
+    <color name="red700">#E0101C</color>
+    <color name="red600">#F5121F</color>
+    <color name="red500">#FF232F</color>
+    <color name="red400">#FF434D</color>
+    <color name="red300">#FF6169</color>
+    <color name="red200">#FF999F</color>
+
+    <!--    Orange Color-->
+    <color name="orange800">#FC4E04</color>
+    <color name="orange700">#FF570F</color>
+    <color name="orange600">#FF6C2F</color>
+    <color name="orange500">#FF7C45</color>
+    <color name="orange400">#FF8D5E</color>
+    <color name="orange300">#FFA17A</color>
+    <color name="orange200">#FFB89A</color>
+
+    <!--    Teal Color-->
+    <color name="teal800">#00746D</color>
+    <color name="teal700">#00847C</color>
+    <color name="teal600">#00A399</color>
+    <color name="teal500">#00B6AC</color>
+    <color name="teal400">#1ED6CB</color>
+    <color name="teal300">#93E1DD</color>
+    <color name="teal200">#A2F0EC</color>
+
+    <!--    Grey Color-->
+    <color name="grey800">#06122B</color>
+    <color name="grey700">#818896</color>
+    <color name="grey600">#9CA3AF</color>
+    <color name="grey500">#BCC1CA</color>
+    <color name="grey400">#DDE0E4</color>
+    <color name="grey300">#E8EBED</color>
+    <color name="grey200">#F9F9F9</color>
+    <color name="grey100">#FFFFFF</color>
+    <color name="light_blue_400">#FF29B6F6</color>
+    <color name="light_blue_600">#FF039BE5</color>
+    <color name="gray_400">#FFBDBDBD</color>
+    <color name="gray_600">#FF757575</color>
+
+</resources>
